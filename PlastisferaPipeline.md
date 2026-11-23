@@ -132,7 +132,8 @@ blastp \
 ```
 ## Archivos Generados para los Análisis Posteriores
 Al finalizar la ejecución completa del pipeline, la estructura de archivos resultante contiene todos los insumos y reportes listos para su interpretación bioinformática y estadístico-descriptiva:
-
+```
+# Unicamente se usa para visualizar los documentos que se obtienen
 ~/plastisfera_datos/
 ├── DRR966448/
 │   └── DRR966448.sra                              # Archivo crudo comprimido descargado desde SRA/DDBJ
@@ -156,7 +157,7 @@ Al finalizar la ejecución completa del pipeline, la estructura de archivos resu
     │   └── db_ref_prueba.*                        # Archivos binarios indexados de la base BLAST (.phr, .pin, .psq, etc.)
     └── 06_blastp/
         └── DRR966448_hits.tsv                     # Tabla final de anotación funcional (query, sujeto, % identidad, longitud, e-value, bitscore y descripción)
-
+```
 ### Inspección rápida de los archivos generados
 ```
 grep -c "^>" Propuesta_pipeline/04_orfs/orfs.faa
